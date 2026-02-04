@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Juan David Velásquez Restrepo - Estudiante de Ingeniería de Sistemas en Universidad EAFIT">
+    <meta name="keywords" content="desarrollador, ingeniería de sistemas, EAFIT, Python, Java, portafolio">
+    <title>Juan David Velásquez | Portafolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">JD<span>.</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-greeting">¡Hola! Soy</span>
+                <h1 class="hero-title">Juan David<br><span>Velásquez Restrepo</span></h1>
+                <p class="hero-subtitle">
+                    Estudiante de <strong>Ingeniería de Sistemas</strong>
+                </p>
+                <div class="hero-university">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Universidad EAFIT</span>
+                </div>
+                <p class="hero-description">
+                    Apasionado por la tecnología y el desarrollo de software. 
+                    Actualmente en 7° semestre, buscando oportunidades de prácticas profesionales.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-shape">
+                    <div class="hero-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy estudiante de <strong>Ingeniería de Sistemas</strong> en la 
+                        <strong>Universidad EAFIT</strong>, actualmente cursando mi 7° semestre. 
+                        Me apasiona el desarrollo de software y la resolución de problemas 
+                        a través de la tecnología.
+                    </p>
+                    <p>
+                        Durante mi carrera he trabajado en diversos proyectos que me han 
+                        permitido desarrollar habilidades tanto técnicas como blandas. 
+                        Estoy en búsqueda de prácticas profesionales donde pueda aplicar 
+                        mis conocimientos y seguir creciendo como profesional.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Medellín, Colombia</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-university"></i>
+                            <span>Universidad EAFIT</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-book"></i>
+                            <span>7° Semestre</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <h3 class="skills-subtitle"><i class="fas fa-code"></i> Habilidades Técnicas</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon java">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h4>Java</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon html">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h4>HTML</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon css">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h4>CSS</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon sql">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>SQL</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-category">
+                <h3 class="skills-subtitle"><i class="fas fa-users"></i> Habilidades Blandas</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-people-carry"></i>
+                        </div>
+                        <h4>Trabajo en Equipo</h4>
+                        <p>Colaboración efectiva y comunicación asertiva</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>Liderazgo</h4>
+                        <p>Capacidad de guiar y motivar equipos</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>Responsabilidad</h4>
+                        <p>Compromiso con los objetivos y plazos</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h4>Perseverancia</h4>
+                        <p>Persistencia ante los desafíos</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h4>Inglés Intermedio</h4>
+                        <p>Comunicación en entornos internacionales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="section-description">
+                Algunos de los proyectos que he desarrollado durante mi carrera
+            </p>
+            <div class="projects-grid">
+                
+                <!-- ==================== PROYECTO 1 ==================== -->
+                <!-- Para editar: cambia el título, descripción, imagen y enlaces -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Puedes cambiar esta imagen por una captura de tu proyecto -->
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nombre del Proyecto 1</h3>
+                        <p class="project-description">
+                            Descripción breve del proyecto. Explica qué hace, 
+                            qué tecnologías usaste y cuál fue tu rol.
+                        </p>
+                        <div class="project-tags">
+                            <!-- Cambia estos tags según las tecnologías usadas -->
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- Cambia # por el enlace a tu repositorio -->
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <!-- Si tienes demo, descomenta y cambia el enlace -->
+                            <!-- <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a> -->
+                        </div>
+                    </div>
+                </article>
+                <!-- ==================== FIN PROYECTO 1 ==================== -->
+
+                <!-- ==================== PROYECTO 2 ==================== -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nombre del Proyecto 2</h3>
+                        <p class="project-description">
+                            Descripción breve del proyecto. Explica qué hace, 
+                            qué tecnologías usaste y cuál fue tu rol.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- ==================== FIN PROYECTO 2 ==================== -->
+
+                <!-- ==================== PROYECTO 3 ==================== -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nombre del Proyecto 3</h3>
+                        <p class="project-description">
+                            Descripción breve del proyecto. Explica qué hace, 
+                            qué tecnologías usaste y cuál fue tu rol.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- ==================== FIN PROYECTO 3 ==================== -->
+
+                <!-- ==================== PARA AGREGAR MÁS PROYECTOS ==================== -->
+                <!-- Copia todo el bloque de un proyecto (desde el comentario de inicio 
+                     hasta el comentario de fin) y pégalo aquí abajo. Luego edita los datos. -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-description">
+                ¿Interesado en trabajar conmigo? ¡Contáctame!
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:Juandavidvr151005@gmail.com" class="contact-card">
+                    <div class="contact-icon email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Juandavidvr151005@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/juan-david-velasquez-restrepo-11aa8b256/" target="_blank" class="contact-card">
+                    <div class="contact-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Juan David Velásquez</p>
+                </a>
+                <a href="https://github.com/juanda151005" target="_blank" class="contact-card">
+                    <div class="contact-icon github">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>@juanda151005</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2026 Juan David Velásquez Restrepo</p>
+                <p>Estudiante de Ingeniería de Sistemas - Universidad EAFIT</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
