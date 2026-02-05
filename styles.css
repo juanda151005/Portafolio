@@ -5,39 +5,39 @@
     --primary-light: #3b82f6;
     --primary-dark: #1d4ed8;
     --secondary-color: #10b981;
-    
+
     /* Colores de fondo */
     --bg-primary: #ffffff;
     --bg-secondary: #f8fafc;
     --bg-tertiary: #f1f5f9;
-    
+
     /* Colores de texto */
     --text-primary: #1e293b;
     --text-secondary: #475569;
     --text-muted: #94a3b8;
-    
+
     /* Gradientes */
     --gradient-primary: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
     --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-    
+
     /* Sombras */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     --shadow-card: 0 4px 20px rgba(37, 99, 235, 0.1);
-    
+
     /* Espaciado */
     --section-padding: 100px 0;
     --container-padding: 0 20px;
-    
+
     /* Bordes */
     --border-radius-sm: 8px;
     --border-radius-md: 12px;
     --border-radius-lg: 20px;
     --border-radius-xl: 30px;
-    
+
     /* Transiciones */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
@@ -187,8 +187,15 @@ body {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(0); }
-    50% { transform: translateY(-30px) rotate(5deg); }
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(5deg);
+    }
 }
 
 .hero-container {
@@ -212,6 +219,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -337,10 +345,23 @@ body {
 }
 
 @keyframes morph {
-    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
-    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
-    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+
+    0%,
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
 }
 
 .hero-avatar {
@@ -354,9 +375,13 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.hero-avatar i {
-    font-size: 8rem;
-    color: rgba(255, 255, 255, 0.9);
+
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Scroll Indicator */
@@ -379,8 +404,15 @@ body {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(10px); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
 }
 
 /* ==================== SECTION STYLES ==================== */
@@ -521,11 +553,25 @@ body {
     color: white;
 }
 
-.skill-icon.python { background: linear-gradient(135deg, #3776AB, #FFD43B); }
-.skill-icon.java { background: linear-gradient(135deg, #007396, #ED8B00); }
-.skill-icon.html { background: linear-gradient(135deg, #E34F26, #F06529); }
-.skill-icon.css { background: linear-gradient(135deg, #1572B6, #33A9DC); }
-.skill-icon.sql { background: linear-gradient(135deg, #336791, #00758F); }
+.skill-icon.python {
+    background: linear-gradient(135deg, #3776AB, #FFD43B);
+}
+
+.skill-icon.java {
+    background: linear-gradient(135deg, #007396, #ED8B00);
+}
+
+.skill-icon.html {
+    background: linear-gradient(135deg, #E34F26, #F06529);
+}
+
+.skill-icon.css {
+    background: linear-gradient(135deg, #1572B6, #33A9DC);
+}
+
+.skill-icon.sql {
+    background: linear-gradient(135deg, #336791, #00758F);
+}
 
 .skill-card h4 {
     font-size: 1.1rem;
@@ -752,9 +798,17 @@ body {
     transform: scale(1.1);
 }
 
-.contact-icon.email { background: linear-gradient(135deg, #EA4335, #FBBC05); }
-.contact-icon.linkedin { background: linear-gradient(135deg, #0077B5, #00A0DC); }
-.contact-icon.github { background: linear-gradient(135deg, #333, #6e5494); }
+.contact-icon.email {
+    background: linear-gradient(135deg, #EA4335, #FBBC05);
+}
+
+.contact-icon.linkedin {
+    background: linear-gradient(135deg, #0077B5, #00A0DC);
+}
+
+.contact-icon.github {
+    background: linear-gradient(135deg, #333, #6e5494);
+}
 
 .contact-card h3 {
     font-size: 1.2rem;
@@ -794,37 +848,37 @@ body {
         text-align: center;
         gap: 40px;
     }
-    
+
     .hero-content {
         order: 2;
     }
-    
+
     .hero-image {
         order: 1;
     }
-    
+
     .hero-title {
         font-size: 2.8rem;
     }
-    
+
     .hero-description {
         margin: 0 auto 30px;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .hero-shape {
         width: 280px;
         height: 280px;
     }
-    
+
     .hero-avatar {
         width: 220px;
         height: 220px;
     }
-    
+
     .hero-avatar i {
         font-size: 6rem;
     }
@@ -844,51 +898,51 @@ body {
         padding: 20px 0;
         gap: 0;
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .nav-menu li {
         padding: 15px 0;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .hero {
         padding-top: 100px;
     }
-    
+
     .hero-title {
         font-size: 2.2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .about-text {
         padding: 25px;
     }
-    
+
     .about-info {
         flex-direction: column;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -898,34 +952,35 @@ body {
     .hero-title {
         font-size: 1.8rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .hero-shape {
         width: 220px;
         height: 220px;
     }
-    
+
     .hero-avatar {
         width: 170px;
         height: 170px;
     }
-    
+
     .hero-avatar i {
         font-size: 4rem;
     }
-    
+
     .btn {
         padding: 12px 24px;
         font-size: 0.9rem;
     }
-    
-    .skill-card, .soft-skill-item {
+
+    .skill-card,
+    .soft-skill-item {
         padding: 20px;
     }
-    
+
     .contact-card {
         padding: 30px 20px;
     }
