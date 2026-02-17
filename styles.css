@@ -325,6 +325,18 @@ body {
     transform: translateY(-3px);
 }
 
+.btn-cv {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    gap: 8px;
+}
+
+.btn-cv:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+}
+
 /* Hero Image */
 .hero-image {
     display: flex;
