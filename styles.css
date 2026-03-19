@@ -586,6 +586,22 @@ body {
     background: linear-gradient(135deg, #336791, #00758F);
 }
 
+.skill-icon.csharp {
+    background: linear-gradient(135deg, #682876, #9B4DCA);
+}
+
+.skill-icon.javascript {
+    background: linear-gradient(135deg, #F0DB4F, #E8A317);
+}
+
+.skill-icon.unity {
+    background: linear-gradient(135deg, #222C37, #4A6274);
+}
+
+.skill-icon.git {
+    background: linear-gradient(135deg, #F05032, #DE4C36);
+}
+
 .skill-card h4 {
     font-size: 1.1rem;
     color: var(--text-primary);
@@ -705,6 +721,27 @@ body {
     font-size: 4rem;
     color: var(--text-muted);
     opacity: 0.5;
+}
+
+.project-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 6px 14px;
+    border-radius: var(--border-radius-xl);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+    animation: badge-pulse 2.5s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes badge-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.75; }
 }
 
 .project-content {
